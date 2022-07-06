@@ -1,0 +1,15 @@
+@DisplayName
+- junit 4 에서는 테스트메서드의 이름을 영문으로 지어줬어야 했다
+- junit 5 에서도 마찬가지로 테스트메서드의 이름은 영문으로 지어주어야 함 ㅋ
+  - 근데 테스트메서드 위에 @DisplayName("테스트를 테스트하는 테스트") 라고 적어주면 IDE 에 @DisplayName 안의 내용이 표시됨
+```
+#### @DisplayName 적용 전
+![Screen Shot 2022-07-06 at 1 52 51 PM](https://user-images.githubusercontent.com/34904576/177472236-5ec7e229-bccd-4fdf-80ba-4fd19bcad9d1.png)
+```
+```
+#### @DisplayName 적용 후
+![Screen Shot 2022-07-06 at 1 53 53 PM](https://user-images.githubusercontent.com/34904576/177472286-587e25af-12e4-45e6-af70-5d8cd3e81b29.png)
+```
+  
+@Disabled
+- 테스트는 작성해놨는데 잠시 돌리고 싶지 않은 테스트메서드가 생겼다 그럼 이걸 쓴다
