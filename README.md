@@ -53,7 +53,6 @@ class OfTheTest_ByTheTest_ForTheTest {
 # 이거슨 TEST 0
 # AfterEach: 0
 #######################
-
 #######################
 # BeforeEach: 1
 # 이거슨 TEST 1
@@ -69,7 +68,7 @@ class OfTheTest_ByTheTest_ForTheTest {
 #### @AfterAll
 - 야는 각 테스트가 실행된 후에 한번씩 돌아감
 - 얘도 정적메서드에 사용해줘야 함, 안그럼 에러남
-- 
+
 ```
 #### 예제
 ##### @BeforeEach
@@ -109,6 +108,16 @@ class OfTheTest_ByTheTest_ForTheTest {
 # BeforeAll: 0
 # 이거슨 TEST 0
 # 이거슨 TEST 1
-# afterAll: 0
+# AfterAll: 0
 #######################
 ```
+
+#### 테스트 메서드 간 실행 순서 의존과 필드 공유하지 않기
+- 각 테스트 메서드는 서로 독립적으로 동작해야한다
+- 테스트순서에 따라 테스트의 결과가 달라진다면 유지보수가 어려워져서 결국, 개 똥이되는 것이다 명심하도록,,
+
+
+
+
+
+
